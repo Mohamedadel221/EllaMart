@@ -5,6 +5,7 @@ import ProductsDetails from "@/views/ProductsDetails.vue";
 import LogIn from "@/components/signup-signin/LogIn.vue";
 import CartPage from "@/views/CartPage.vue";
 import CheckOut from "@/views/CheckOut.vue";
+import ErrorPage from "@/views/ErrorPage.vue";
 const routes = [
   {
     path: "/",
@@ -49,6 +50,14 @@ const routes = [
     component: CheckOut,
     meta: {
       title: "CheckOut Page",
+    },
+  },
+  {
+    path: "/:catchAll(.*)",
+    name: "error-page",
+    component: ErrorPage,
+    meta: {
+      title: "Page Not Found",
     },
   },
 ];
