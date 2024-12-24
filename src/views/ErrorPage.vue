@@ -21,4 +21,7 @@ export default {
   align-items: center;
   min-height: 100vh;
 }
+a {
+text-decorution:none;
+}
 </style>
